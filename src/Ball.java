@@ -1,3 +1,7 @@
 public class Ball {
-    String name = "Miuccia";
+    String name;
+
+    public Ball(String n){
+        name = n;
+    }
 }
