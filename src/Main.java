@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello mom!");
+        Ball ball = new Ball();
+        System.out.println(ball.name);
     }
 }
