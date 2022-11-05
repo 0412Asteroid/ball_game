@@ -14,10 +14,12 @@ public class Ball {
     }
 
     public void fight(Ball b) {
+        Ball winner;
         if (hitPoints > b.hitPoints) {
-            System.out.println("You won!! :)");
+            winner = this;
         } else {
-            System.out.println("You lose :(");
+            winner = b;
         }
+        System.out.println("The winner is " + winner.name + "!");
     }
 }
