@@ -4,5 +4,7 @@ public class Main {
         ball.sayHi();
         Ball ball2 = new Ball( "ball2");
         ball2.sayHi();
+        ball.fight(ball2);
     }
+
 }
