@@ -21,5 +21,7 @@ public class Ball {
             winner = b;
         }
         System.out.println("The winner is " + winner.name + "!");
+        System.out.println("Win by " + Math.abs(hitPoints - b.hitPoints) + " points");
+
     }
 }
