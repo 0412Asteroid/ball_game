@@ -4,27 +4,24 @@ public class Ball {
     float y;
     int size;
 
-    public Ball(String n) {
-        name = n;
-        x = 0;
-        y = 0;
-        size = (int) (Math.random() * 50 + 1);
+    boolean movingLeft;
+    boolean movingUp;
+
+    public Ball(String name, float x, float y, int size) {
+        this.name = name;
+        this.x = x;
+        this.y = y;
+        this.size = size;
     }
 
-    public void sayHi() {
-        System.out.println("Hi, I'm " + name + "!");
-        System.out.println("I have " + size + " area.");
-
+    void sayHi() {
+        System.out.println("Hi, my name's " + name + "!");
+        System.out.println("I have a size of" + size);
+        System.out.println("I'm at position " + x + ", " + y);
+    }
+    int speed(){
+        return size + 1;
     }
 
-    public void fight(Ball b) {
-        Ball winner;
-        if (size > b.size) {
-            winner = this;
-        } else {
-            winner = b;
-        }
-        System.out.println("The winner is " + winner.name + "!");
-        System.out.println("Win by " + Math.abs(size - b.size) + " points");
-    }
+
 }

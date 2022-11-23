@@ -1,10 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Ball ball = new Ball("ball1");
-        ball.sayHi();
-        Ball ball2 = new Ball( "ball2");
-        ball2.sayHi();
-        ball.fight(ball2);
+        Game game = new Game(1000,1000,1000);
+        game.initGame();
+        game.sayHiFromAllTheBalls();
     }
-
 }
