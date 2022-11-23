@@ -6,8 +6,8 @@ public class Game {
     int width;
     int height;
 
-    public Game(int numberOfBalls, int width, int height) {
-        this.numberOfNPCBalls = numberOfBalls;
+    public Game(int numberOfNPCBalls, int width, int height) {
+        this.numberOfNPCBalls = numberOfNPCBalls;
         this.width = width;
         this.height = height;
     }
