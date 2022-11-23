@@ -28,14 +28,19 @@ public class Game {
     }
 
     void sayHiFromAllTheBalls(){
-        for (int i = 0; i < numberOfNPCBalls; i++) {
+        for (int i = 0; i < balls.size(); i++) {
             Ball b = balls.get(i);
             System.out.println("--------------");
             System.out.println("Ball " + (i+1) + " says:");
             b.sayHi();
         }
     }
-
   
-    
+  
+    void updateLocations(){
+      for (int i = 0; i < balls.size(); i++) {
+            Ball b = balls.get(i);
+            b.updateLocation();
+        }
+    }
 }
