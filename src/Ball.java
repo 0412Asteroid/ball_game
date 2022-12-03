@@ -16,26 +16,27 @@ public class Ball {
 
     void sayHi() {
         System.out.println("Hi, my name's " + name + "!");
-        System.out.println("I have a size of" + size);
+        System.out.println("I have a size of " + size);
         System.out.println("I'm at position " + x + ", " + y);
+        System.out.println("I have speed of " + speed());
     }
-  
-    int speed(){
+
+    int speed() {
         return size + 1;
     }
-  
-    void updateLocation(){
-      int currentSpeed = speed();
-      if (movingLeft){
-        x=x-currentSpeed;
-      }else{
-        x=x+currentSpeed;
-      }
-      if (movingUp){
-        y=y-currentSpeed;
-      }else{
-        y=y+currentSpeed;
-      }
+
+    void updateLocation() {
+        int currentSpeed = speed();
+        if (movingLeft) {
+            x = x - currentSpeed;
+        } else {
+            x = x + currentSpeed;
+        }
+        if (movingUp) {
+            y = y - currentSpeed;
+        } else {
+            y = y + currentSpeed;
+        }
     }
 
 }
