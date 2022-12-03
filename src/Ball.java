@@ -1,5 +1,3 @@
-import com.oracle.truffle.api.Truffle;
-
 public class Ball {
     String name;
     float x;
@@ -28,12 +26,12 @@ public class Ball {
   
     void updateLocation(){
       int currentSpeed = speed();
-      if (movingLeft==true){
+      if (movingLeft){
         x=x-currentSpeed;
       }else{
         x=x+currentSpeed;
       }
-      if (movingUp==true){
+      if (movingUp){
         y=y-currentSpeed;
       }else{
         y=y+currentSpeed;
